@@ -104,6 +104,13 @@
             $('#Treasure_video').attr('src', $('iframe').attr('src'));
         });
 
+        $("#carousel_butterfly_prev").click(function() {
+            $('#carousel_butterfly').carousel('prev');
+        });
+
+        $("#carousel_butterfly_next").click(function() {
+            $('#carousel_butterfly').carousel('next');
+        });
 
         $("#carousel_thstory_prev").click(function() {
             $('#carousel_thstory').carousel('prev');
