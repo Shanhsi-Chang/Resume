@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Page title -->
+    <title>程式設計師 — 張珊曦</title>
+    <!-- /Page title -->
+
+    <!-- CSS Files
+  ========================================================= -->
+    <!-- Google web fonts - Open Sans -->
+    <link href='asset/css.css' rel='stylesheet' type='text/css' />
+    <!-- /Google web fonts -->
+    <!-- Bootstrap CSS -->
+    <link href="asset/bootstrap.min.css" rel="stylesheet" />
+    <!-- /Bootstrap CSS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="asset/font-awesome.min.css" />
+    <!-- /Font Awesome -->
+    <!-- Nivo Lightbox -->
+    <link href="asset/nivo-lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="asset/default.css" type="text/css" />
+    <!-- /Nivo Lightbox -->
+    <!-- Animate CSS -->
+    <link href="asset/animate.css" rel="stylesheet" />
+    <!-- /Animate CSS -->
+    <!-- Theme Styles -->
+    <link href="asset/styles.css" rel="stylesheet" />
+    <!-- <link href="asset/james.css" rel="stylesheet"> -->
+    <link href="asset/ui-bootstrap-csp.css" rel="stylesheet" />
+    <!-- Theme Styles -->
+    <!-- / CSS Files
+  ========================================================= -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body data-spy="scroll" data-target="#side-menu" ng-app="resumeApp">
+
+    <!-- Page Loader
+========================================================= -->
+    <div class="loader" id="page-loader">
+        <div class="loading-wrapper">
+            <div class="tp-loader spinner"></div>
+            <!-- Edit With Your Name -->
+            <div class="side-menu-name">
+                張 <strong>珊曦</strong>
+            </div>
+            <!-- /Edit With Your Name -->
+            <!-- Edit With Your Job -->
+            <p class="side-menu-job">程式設計師</p>
+            <!-- /Edit With Your Job -->
+        </div>
+    </div>
+    <!-- /End of Page loader
+========================================================= -->
+
+    <!-- SIDE MENU
+========================================================= -->
+    <div class="side-menu-open hidden-sm hidden-xs">
+        <!-- Menu-button -->
+        <a href="#" class="btn btn-default side-menu-button"><i class="fa fa-bars"></i> MENU</a>
+        <!-- /menu-button -->
+    </div>
+    <!-- Side Menu container -->
+    <div class="side-menu">
+        <!-- close button -->
+        <span id="side-menu-close"><i class="fa fa-times"></i></span>
+        <!-- /close button -->
+
+        <!-- Menu header -->
+        <div class="side-menu-name">
+            <!-- edit with your name -->
+            張 <strong>珊曦</strong>
+            <!-- /edit with your name -->
+        </div>
+        <!-- edit with your Job -->
+        <p class="side-menu-job">程式設計師</p>
+        <!-- /edit with your job -->
+        <!-- /Menu Header -->
+
+        <!-- Main Navigation -->
+        <nav id="side-menu" class="side-menu-este">
+            <ul class="nav side-menu-nav">
+                <li><a href="#intro"><i class="fa fa-angle-right"></i> 個人資訊</a></li>
+                <li><a href="#education"><i class="fa fa-angle-right"></i> 學歷</a></li>
+                <li><a href="#skills"><i class="fa fa-angle-right"></i> 能力</a></li>
+                <li><a href="#WORK"><i class="fa fa-angle-right"></i> 作品</a></li>
+            </ul>
+        </nav>
+        <!-- /Main Navigation-->
+    </div>
+    <!-- /side menu container -->
+
+    <!-- /SIDE MENU
+========================================================= -->
+
+    <!-- CONTENT
+========================================================= -->
+    <section id="content-body" class="container animated" ng-controller="resumeCtrl">
+        <div class="row" id="intro">
+
+            <!-- Header Colors -->
+            <div class="col-md-10 col-sm-10  col-md-offset-2 col-sm-offset-1 clearfix top-colors">
+                <div class="top-color top-color1"></div>
+                <div class="top-color top-color2"></div>
+                <div class="top-color top-color3"></div>
+                <div class="top-color top-color1"></div>
+                <div class="top-color top-color2"></div>
+            </div>
+            <!-- /Header Colors -->
+
+            <!-- Beginning of Content -->
+            <div class="col-md-10 col-sm-10 col-md-offset-2 col-sm-offset-1 resume-container">
+
+                <!-- =============== PROFILE INTRO ====================-->
+                <div class="profile-intro row">
+                    <!-- Left Collum with Avatar pic -->
+                    <div class="col-md-4 profile-col">
+                        <!-- Avatar pic -->
+                        <div class="profile-pic">
+                            <div class="profile-border">
+                                <!-- Put your picture here ( 308px by 308px for retina display)-->
+                                <img src="asset/3c.png" alt="">
+                                <!-- /Put your picture here -->
+                            </div>
+                        </div>
+                        <!-- /Avatar pic -->
+                    </div>
+                    <!-- /Left columm with avatar pic -->
+
+                    <!-- Right Columm -->
+                    <div class="col-md-7">
+                        <!-- Welcome Title-->
+                        <h1 class="intro-title1">你好, 我是<span class="color1 bold">珊曦!</span></h1>
+                        <!-- /Welcome Title -->
+                        <!-- Job - -->
+                        <h2 class="intro-title2">程式設計師</h2>
+                        <!-- /job -->
+                        <!-- Description -->
+                        <p>你現在正在閱讀的是張珊曦的個人履歷，首先先謝謝你抽空閱讀這份履歷。</p>
+                        <!-- /Description -->
+                    </div>
+                    <!-- /Right Collum -->
+                </div>
+                <!-- ============  /PROFILE INTRO ================= -->
+
+                <!-- ============  TIMELINE ================= -->
+                <div class="timeline-wrap">
+                    <div class="timeline-bg">
+
+                        <!-- ====>> SECTION: PROFILE INFOS <<====-->
+                        <section class="timeline profile-infos">
+
+                            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+                            <div class="line row timeline-margin">
+                                <div class="content-wrap">
+                                    <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                                    <div class="col-md-9 bg1 full-height"></div>
+                                </div>
+                            </div>
+                            <!-- /VERTICAL MARGIN -->
+
+                            <!-- SECTION TITLE -->
+                            <div class="line row">
+                                <!-- Margin Collums (necessary for the timeline effect) -->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height">
+                                </div>
+                                <!-- /Margin Collums -->
+                                <!-- Item Content -->
+                                <div class="col-md-8 content-wrap bg1">
+                                    <!-- Section title -->
+                                    <h2 class="section-title">個人資訊</h2>
+                                    <!-- /Section title -->
+                                </div>
+                                <!-- /Item Content -->
+                                <!-- Margin Collum-->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <!-- / Margin Collum-->
+                            </div>
+                            <!-- /SECTION TITLE -->
+
+                            <!-- SECTION ITEM -->
+                            <div class="line row">
+                                <!-- Margin Collums (necessary for the timeline effect) -->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+                                <!-- /Margin Collums -->
+                                <!-- Item Content -->
+                                <div class="col-md-8 content-wrap bg1">
+                                    <div class="line-content">
+                                        <!-- Subtitle -->
+                                        <h3 class="section-item-title-1">全名</h3>
+                                        <!-- /Subtitle -->
+                                        <!-- content -->
+                                        <p>張珊曦</p>
+                                        <!-- /Content -->
+                                    </div>
+                                </div>
+                                <!-- /Item Content -->
+                                <!-- Margin Collum-->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <!-- /Margin Collum-->
+                            </div>
+                            <!-- /SECTION ITEM -->
+
+                            <!-- SECTION ITEM -->
+                            <div class="line row">
+                                <!-- Margin Collums (necessary for the timeline effect) -->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+                                <!-- /Margin Collums -->
+                                <!-- Item Content -->
+                                <div class="col-md-8 content-wrap bg1">
+                                    <div class="line-content">
+                                        <!-- Subtitle -->
+                                        <h3 class="section-item-title-1">希望職位</h3>
+                                        <!-- /Subtitle -->
+                                        <!-- content -->
+                                        <p>程式設計師</p>
+                                        <!-- /Content -->
+                                    </div>
+                                </div>
+                                <!-- /Item Content -->
+                                <!-- Margin Collum-->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <!-- /Margin Collum-->
+                            </div>
+                            <!-- /SECTION ITEM -->
+
+                            <!-- SECTION ITEM -->
+                            <div class="line row">
+                                <!-- Margin Collums (necessary for the timeline effect) -->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+                                <!-- /Margin Collums -->
+                                <!-- Item Content -->
+                                <div class="col-md-8 content-wrap bg1">
+                                    <div class="line-content">
+                                        <!-- Subtitle -->
+                                        <h3 class="section-item-title-1">出生日期</h3>
+                                        <!-- /Subtitle -->
+                                        <!-- content -->
+                                        <p>1990年10月11日（女）</p>
+                                        <!-- /Content -->
+                                    </div>
+                                </div>
+                                <!-- /Item Content -->
+                                <!-- Margin Collum-->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <!-- /Margin Collum-->
+                            </div>
+                            <!-- /SECTION ITEM -->
+
+                            <!-- SECTION ITEM -->
+                            <div class="line row">
+                                <!-- Margin Collums (necessary for the timeline effect) -->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+                                <!-- /Margin Collums -->
+                                <!-- Item Content -->
+                                <div class="col-md-8 content-wrap bg1">
+                                    <div class="line-content">
+                                        <!-- Subtitle -->
+                                        <h3 class="section-item-title-1">Email</h3>
+                                        <!-- /Subtitle -->
+                                        <!-- content -->
+                                        <p>white511409@gmail.com</p>
+                                        <!-- /Content -->
+                                    </div>
+                                </div>
+                                <!-- /Item Content -->
+                                <!-- Margin Collum -->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <!-- /Margin Collums -->
+                            </div>
+                            <!-- /SECTION ITEM -->
+
+                            <!-- SECTION ITEM -->
+                            <div class="line row">
+                                <!-- Margin Collums (necessary for the timeline effect) -->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+                                <!-- Margin Collums (necessary for the timeline effect) -->
+                                <!-- Item Content -->
+                                <div class="col-md-8 content-wrap bg1">
+                                    <div class="line-content">
+                                        <!-- Subtitle -->
+                                        <h3 class="section-item-title-1">Find Me On</h3>
+                                        <!-- /Subtitle -->
+                                        <!-- content -->
+                                        <a href="https://www.facebook.com/shanhsi.chang" class="btn btn-default"><i class="fa fa-facebook"></i></a>
+                                        <a href="https://github.com/Shanhsi-Chang" class="btn btn-default"><i class="fa fa-github"></i></a>
+                                        <!-- /Content -->
+                                    </div>
+                                </div>
+                                <!-- /Item Content -->
+                                <!-- Margin Collum -->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <!-- /Margin Collum -->
+                            </div>
+                            <!-- /SECTION ITEM -->
+                        </section>
+                        <!-- ==>> /SECTION: PROFILE INFOS -->
+
+                        <!-- ====>> SECTION: EDUCATION <<====-->
+                        <section class="timeline education" id="education">
+
+                            <!-- Margin (necessary for the timeline effect) -->
+                            <div class="line row timeline-margin">
+                                <div class="content-wrap">
+                                    <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                                    <div class="col-md-9 bg1 full-height"></div>
+                                </div>
+                            </div>
+                            <!-- /Margin -->
+
+                            <!-- SECTION TITLE -->
+                            <div class="line row">
+                                <!-- Margin Collums (necessary for the timeline effect) -->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height">
+                                </div>
+                                <!-- /Margin Collums -->
+                                <!-- Item Content -->
+                                <div class="col-md-8 content-wrap bg1">
+                                    <!-- Section title -->
+                                    <h2 class="section-title">學歷</h2>
+                                    <!-- /Section title -->
+                                </div>
+                                <!-- /Item Content -->
+                                <!-- Margin Collum-->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <!-- /Margin Collum-->
+                            </div>
+                            <!-- /SECTION TITLE -->
+
+                            <!-- SECTION ITEM -->
+                            <div class="line row">
+                                <!-- Margin Collums (necessary for the timeline effect) -->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-education "></div>
+                                <!-- /Margin Collums -->
+                                <!-- Item Content -->
+                                <div class="col-md-8 content-wrap bg1">
+                                    <div class="line-content line-content-education">
+                                        <!-- Graduation title -->
+                                        <h3 class="section-item-title-1"> 管理學碩士</h3>
+                                        <!-- /Graduation title -->
+                                        <!-- Graduation time -->
+                                        <h4 class="graduation-time"><i class="fa fa-university"></i> 國立彰化師範大學數位內容科技與管理碩士班 - <span class="graduation-date"> 2013.09—2015.12</span></h4>
+                                        <!-- /Graduation time -->
+                                        <!-- content -->
+                                        <div class="graduation-description">
+                                            <p>研究領域以數位學習為主，透過Unity建置AR(Augmented Reality)互動軟體</p>
+                                        </div>
+                                        <!-- /Content -->
+                                    </div>
+                                </div>
+                                <!--/Item Content -->
+                                <!-- Margin Collum-->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <!-- /Margin Collum-->
+                            </div>
+                            <!-- /SECTION ITEM -->
+
+                            <!-- SECTION ITEM -->
+                            <div class="line row">
+                                <!-- Margin Collums (necessary for the timeline effect) -->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-education "></div>
+                                <!-- /Margin Collums -->
+                                <!-- Item Content -->
+                                <div class="col-md-8 content-wrap bg1">
+                                    <div class="line-content line-content-education">
+                                        <!-- Graduation title -->
+                                        <h3 class="section-item-title-1"> 資訊管理學士</h3>
+                                        <!-- /Graduation title -->
+                                        <!-- Graduation time -->
+                                        <h4 class="graduation-time"><i class="fa fa-university"></i> 中臺科技大學資訊管理系 - <span class="graduation-date"> 2009.09-2013.06</span></h4>
+                                        <!-- /Graduation time -->
+                                        <!-- content -->
+                                        <div class="graduation-description">
+                                            <p>針對多媒體設計與遊戲設計進行發展，主要開發工具為Adobe Flash</p>
+                                        </div>
+                                        <!-- /Content -->
+                                    </div>
+                                </div>
+                                <!-- /Item Content -->
+                                <!-- Margin Collum -->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <!-- /Margin Collum -->
+                            </div>
+                            <!-- /SECTION ITEM -->
+
+
+
+                        </section>
+                        <!-- ==>> /SECTION: EDUCATION <<==== -->
+
+                        <!-- ====>> SECTION: SKILLS <<====-->
+                        <section class="timeline skills" id="skills">
+
+                            <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+                            <div class="line row timeline-margin">
+                                <div class="content-wrap">
+                                    <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                                    <div class="col-md-9 bg1 full-height"></div>
+                                </div>
+                            </div>
+                            <!-- /VERTICAL MARGIN -->
+
+                            <!-- SECTION TITLE -->
+                            <div class="line row">
+                                <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div>
+                                <!-- /VERTICAL MARGIN (necessary for the timeline effect) -->
+                                <!-- Item Content -->
+                                <div class="col-md-8 content-wrap bg1">
+                                    <!-- Section title -->
+                                    <h2 class="section-title">能力</h2>
+                                    <!-- /Section title -->
+                                </div>
+                                <!-- /Item Content -->
+                                <!-- Margin Collum-->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <!-- /Margin Collum-->
+                            </div>
+                            <!-- /SECTION TITLE -->
+
+                            <!-- SECTION ITEM -->
+                            <div class="line row">
+                                <!-- Margin Collums (necessary for the timeline effect) -->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+                                <!-- / Margin Collums -->
+                                <!-- Item Content -->
+                                <div class="col-md-8 content-wrap bg1">
+                                    <div class="line-content">
+                                        <!-- Subtitle -->
+                                        <h3 class="section-item-title-1">程式設計</h3>
+                                        <!-- /Subtitle -->
+                                        <!-- content -->
+                                        <ul class="skills-list">
+                                            <!-- item-list -->
+                                            <li>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-3" role="progressbar" data-percent="85%" style="width: 85%;">
+                                                        <span class="sr-only">85% Complete</span>
+                                                    </div>
+                                                    <span class="progress-type">Adobe Flash(ActionScrip 3.0)</span>
+                                                    <span class="progress-completed">85%</span>
+                                                </div>
+                                            </li>
+                                            <!-- /item list -->
+                                            <!-- item-list -->
+                                            <li>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-2" role="progressbar" data-percent="70%" style="width: 70%;">
+                                                        <span class="sr-only">70% Complete</span>
+                                                    </div>
+                                                    <span class="progress-type">Unity(javascript)</span>
+                                                    <span class="progress-completed">70%</span>
+                                                </div>
+                                            </li>
+                                            <!-- /item list -->
+                                        </ul>
+                                        <!-- /Content -->
+                                    </div>
+                                </div>
+                                <!-- /Item Content -->
+                                <!-- Margin Collum-->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <!-- /Margin Collum-->
+                            </div>
+                            <!-- /SECTION ITEM -->
+                            <!-- SECTION ITEM -->
+                            <div class="line row">
+                                <!-- Margin Collums (necessary for the timeline effect) -->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+                                <!-- / Margin Collums -->
+                                <!-- Item Content -->
+                                <div class="col-md-8 content-wrap bg1">
+                                    <div class="line-content">
+                                        <!-- Subtitle -->
+                                        <h3 class="section-item-title-1">文書能力</h3>
+                                        <!-- /Subtitle -->
+                                        <!-- content -->
+                                        <ul class="skills-list">
+                                            <!-- item-list -->
+                                            <li>
+                                                <div class="progress" title="Doing my best!">
+                                                    <div class="progress-bar" role="progressbar" data-percent="60%" style="width: 60%;">
+                                                        <span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                    <span class="progress-type">Adobe Illustrator</span>
+                                                    <span class="progress-completed">60%</span>
+                                                </div>
+                                            </li>
+                                            <!-- /item list -->
+                                            <!-- item-list -->
+                                            <li>
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-4" role="progressbar" data-percent="90%" style="width: 90%;">
+                                                        <span class="sr-only">90% Complete</span>
+                                                    </div>
+                                                    <span class="progress-type">MS Office(Word、Excel、Powerpoint)</span>
+                                                    <span class="progress-completed">90%</span>
+                                                </div>
+                                            </li>
+                                            <!-- /item list -->
+
+                                        </ul>
+                                        <!-- /Content -->
+                                    </div>
+                                </div>
+                                <!-- /Item Content -->
+                                <!-- Margin Collum-->
+                                <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                <!-- /Margin Collum-->
+                            </div>
+                            <!-- /SECTION ITEM -->
+
+                            <!-- ====>> SECTION: WORK <<====-->
+                            <section class="timeline" id="WORK">
+
+                                <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+                                <div class="line row timeline-margin">
+                                    <div class="content-wrap">
+                                        <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                        <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                                        <div class="col-md-9 bg1 full-height"></div>
+                                    </div>
+                                </div>
+                                <!-- /VERTICAL MARGIN -->
+
+                                <!-- SECTION TITLE -->
+                                <div class="line row">
+                                    <!-- Margin Collums (necessary for the timeline effect) -->
+                                    <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <div class="col-md-2 timeline-progress hidden-sm hidden-xs timeline-title full-height"></div>
+                                    <!-- /Margin Collums -->
+                                    <!-- Item Content -->
+                                    <div class="col-md-8 content-wrap bg1">
+                                        <!-- Section title -->
+                                        <h2 class="section-title">作品</h2>
+                                        <!-- /Section title -->
+                                    </div>
+                                    <!-- /Item Content -->
+                                    <!-- Margin Collum-->
+                                    <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <!-- /Margin Collum-->
+                                </div>
+                                <!-- /SECTION TITLE -->
+                                <!-- SECTION ITEM -->
+                                <div class="line row">
+                                    <!-- Margin Collums (necessary for the timeline effect) -->
+                                    <div style="height: 164px;" class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <div style="height: 164px;" class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work "></div>
+                                    <!-- /Margin Collums -->
+                                    <!-- Item Content -->
+                                    <div class="col-md-8 content-wrap bg1">
+                                        <div class="line-content line-content-education">
+                                            <!-- Work Place -->
+                                            <h3 class="section-item-title-1">媽媽小書</h3>
+                                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mother">
+                                                影片介紹
+                                            </button>
+                                            <!-- /work place -->
+                                            <!-- Graduation time -->
+                                            <h4 class="job"><i class="fa fa-flag"></i> 彰化師範大學資訊管理學系吳佩芬實驗室 - <span class="job-date">從 2014/9 至 2015/5</span></h4>
+                                            <!-- /Graduation time -->
+                                            <!-- content -->
+                                            <div class="job-description">
+                                                <p>採用Unity 3D作為開發工具所建置的一套平板互動APP。</p>
+                                                <p>媽媽小書主要針對幼兒進行設計，結合立體書與擴增實境而建置出來的數位教材。</p>
+                                                <p>幼兒可以在師長或是父母的引導下，操作立體書以及APP刺激幼兒觸覺、視覺與聽覺的感官，並在過程中促使他們進行思考。</p>
+
+                                                <br />
+                                            </div>
+                                            <!-- /Content -->
+                                        </div>
+                                    </div>
+                                    <!-- /Item Content -->
+                                    <!-- Margin Collum-->
+                                    <div style="height: 164px;" class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <!-- /Margin Collum-->
+                                </div>
+                                <!-- /SECTION ITEM -->
+                                <!-- SECTION ITEM -->
+                                <div class="line row">
+                                    <!-- Margin Collums (necessary for the timeline effect) -->
+                                    <div style="height: 164px;" class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <div style="height: 164px;" class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work "></div>
+                                    <!-- /Margin Collums -->
+                                    <!-- Item Content -->
+                                    <div class="col-md-8 content-wrap bg1">
+                                        <div class="line-content line-content-education">
+                                            <!-- Work Place -->
+                                            <h3 class="section-item-title-1">拼圖學堂</h3>
+                                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Puzzleschool">
+                                                影片介紹
+                                            </button>
+                                            <!-- /work place -->
+                                            <!-- Graduation time -->
+                                            <h4 class="job"><i class="fa fa-flag"></i> 彰化師範大學資訊管理學系數位內容科技與管理研究所 - <span class="job-date">從 2014/1 至 2014/6</span></h4>
+                                            <!-- /Graduation time -->
+                                            <!-- content -->
+                                            <div class="job-description">
+                                                <p>採用Unity 3D作為開發工具所建置的一套平板互動APP。</p>
+                                                <p>透過擴增實境的影像辨識功能與實體拼圖進行互動，</p>
+                                                <p>讓孩子在拼圖過程中即可獲得與動物相關的知識，達到寓教於樂的目的。</p>
+
+                                                <br />
+                                            </div>
+                                            <!-- /Content -->
+                                        </div>
+                                    </div>
+                                    <!-- /Item Content -->
+                                    <!-- Margin Collum-->
+                                    <div style="height: 164px;" class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <!-- /Margin Collum-->
+                                </div>
+                                <!-- /SECTION ITEM -->
+
+                                <!-- SECTION ITEM -->
+                                <div class="line row">
+                                    <!-- Margin Collums (necessary for the timeline effect) -->
+                                    <div style="height: 164px;" class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <div style="height: 164px;" class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work "></div>
+                                    <!-- /Margin Collums -->
+                                    <!-- Item Content -->
+                                    <div class="col-md-8 content-wrap bg1">
+                                        <div class="line-content line-content-education">
+                                            <!-- Work Place -->
+                                            <h3 class="section-item-title-1">祕寶探境</h3>
+                                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Treasure">
+                                                影片介紹
+                                            </button>
+                                            <!-- /work place -->
+                                            <!-- Graduation time -->
+                                            <h4 class="job"><i class="fa fa-flag"></i> 中臺科技大學資訊管理系 - <span class="job-date">從 2012/1 至 2012/12</span></h4>
+                                            <!-- /Graduation time -->
+                                            <!-- content -->
+                                            <div class="job-description">
+                                                <p>Flash開發的線上網頁遊戲。</p>
+                                                <p>遊戲類型為解謎RPG遊戲，玩家註冊後進行遊戲即可在線上儲存遊戲進度，</p>
+                                                <p>因此就是換另外一台電腦也可接續上次遊戲進度進行遊玩。</p>
+
+                                                <br />
+                                            </div>
+                                            <!-- /Content -->
+                                        </div>
+                                    </div>
+                                    <!-- /Item Content -->
+                                    <!-- Margin Collum-->
+                                    <div style="height: 164px;" class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <!-- /Margin Collum-->
+                                </div>
+                                <!-- /SECTION ITEM -->
+
+                                <!-- SECTION ITEM -->
+                                <div class="line row">
+                                    <!-- Margin Collums (necessary for the timeline effect) -->
+                                    <div style="height: 164px;" class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <div style="height: 164px;" class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work "></div>
+                                    <!-- /Margin Collums -->
+                                    <!-- Item Content -->
+                                    <div class="col-md-8 content-wrap bg1">
+                                        <div class="line-content line-content-education">
+                                            <!-- Work Place -->
+                                            <h3 class="section-item-title-1">鄉野密境-大坑休閒餐飲故事館</h3>
+                                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#thstory">
+                                                畫面展示
+                                            </button>
+                                            <!-- /work place -->
+                                            <!-- Graduation time -->
+                                            <h4 class="job"><i class="fa fa-flag"></i> 中臺科技大學通識中心 - <span class="job-date">從 2012/3 至 2012/9</span></h4>
+                                            <!-- /Graduation time -->
+                                            <!-- content -->
+                                            <div class="job-description">
+                                                <p>採用Adobe Flash建置的互動網頁。</p>
+                                                <p>在協助通識中心老師進行大坑研究的過程中，</p>
+                                                <p>將田野調查所獲得的大坑餐飲故事與特色數位化，最終完成「大坑餐飲故事館」。</p>
+
+                                                <br />
+                                            </div>
+                                            <!-- /Content -->
+                                        </div>
+                                    </div>
+                                    <!-- /Item Content -->
+                                    <!-- Margin Collum-->
+                                    <div style="height: 164px;" class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <!-- /Margin Collum-->
+                                </div>
+                                <!-- /SECTION ITEM -->
+
+                                <!-- SECTION ITEM -->
+                                <div class="line row">
+                                    <!-- Margin Collums (necessary for the timeline effect) -->
+                                    <div style="height: 164px;" class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <div style="height: 164px;" class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-work "></div>
+                                    <!-- /Margin Collums -->
+                                    <!-- Item Content -->
+                                    <div class="col-md-8 content-wrap bg1">
+                                        <div class="line-content line-content-education">
+                                            <!-- Work Place -->
+                                            <h3 class="section-item-title-1">數位學習系統-行程排程</h3>
+                                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#DiskSchedule">
+                                                畫面展示
+                                            </button>
+                                            <!-- /work place -->
+                                            <!-- Graduation time -->
+                                            <h4 class="job"><i class="fa fa-flag"></i> 中臺科技大學資訊管理系 - <span class="job-date">從 2011/5 至 2011/10</span></h4>
+                                            <!-- /Graduation time -->
+                                            <!-- content -->
+                                            <div class="job-description">
+                                                <p>採用Adobe Flash建置的數位學習教材。</p>
+                                                <p>作為「作業系統導論」課程的數位教材，</p>
+                                                <p>將作業系統導論中的「行程排程」單元以數位化的方式呈現，</p>
+                                                <p>並透過課程動畫、練習系統、測驗系統幫助學生在課後自主學習。</p>
+
+                                                <br />
+                                            </div>
+                                            <!-- /Content -->
+                                        </div>
+                                    </div>
+                                    <!-- /Item Content -->
+                                    <!-- Margin Collum-->
+                                    <div style="height: 164px;" class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <!-- /Margin Collum-->
+                                </div>
+                                <!-- /SECTION ITEM -->
+
+
+                            </section>
+                            <!-- ==>> /SECTION: WORK -->
+
+
+                            <!-- ====>> SECTION: THANK YOU <<====-->
+                            <section class="timeline profile-infos">
+
+                                <!-- VERTICAL MARGIN (necessary for the timeline effect) -->
+                                <div class="line row timeline-margin timeline-margin-big">
+                                    <div class="content-wrap">
+                                        <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                        <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height"></div>
+                                        <div class="col-md-9 bg1 full-height"></div>
+                                    </div>
+                                </div>
+                                <!-- /VERTICAL MARGIN -->
+
+                                <!-- SECTION ITEM -->
+                                <div class="line row line-thank-you">
+                                    <!-- Margin Collums (necessary for the timeline effect) -->
+                                    <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <div class="col-md-2 timeline-progress hidden-sm hidden-xs full-height timeline-point "></div>
+                                    <!-- /Margin Collums -->
+                                    <!-- Item Content -->
+                                    <div class="col-md-8 content-wrap bg1">
+                                        <div class="line-content">
+                                            <!-- Subtitle -->
+                                            <h3 class="thank-you">Thank You!</h3>
+                                            <!-- /Subtitle -->
+                                        </div>
+                                    </div>
+                                    <!-- /Item Content -->
+                                    <!-- Margin Collum-->
+                                    <div class="col-md-1 bg1 timeline-space full-height hidden-sm hidden-xs"></div>
+                                    <!-- / Margin Collum-->
+                                </div>
+                                <!-- /SECTION ITEM -->
+
+
+                            </section>
+                            <!-- ==>> /SECTION: PROFILE INFOS -->
+                    </div>
+                </div>
+                <!-- ============  /TIMELINE ================= -->
+
+                <!-- ============  FOOTER ================= -->
+                <footer id="footer" class="row">
+                    <!-- Put your Quote Here-->
+                    <!-- <p class="quote">“Ideas are the beginning points of all fortunes”</p> -->
+                    <!-- /Quote -->
+                    <!-- Quote Autor -->
+                    <!-- <p class="author">Napoleon Hill</p> -->
+                    <!-- /Quote Autor -->
+                </footer>
+                <!-- ============  /FOOTER ================= -->
+            </div>
+        </div>
+        </section>
+
+        <!-- /CONTENT
+========================================================= -->
+        <div id="mother" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h1 class="modal-title" id="myModalLabel">媽媽小書</h1>
+                    </div>
+                    <iframe id="mother_video" src="https://drive.google.com/file/d/0B5Pk8R79gfnROVZWRl9EQVB1YkU/preview" width="100%" height="370px"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="Puzzleschool" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h1 class="modal-title" id="myModalLabel">拼圖學堂</h1>
+                    </div>
+                    <iframe id="Puzzleschool_video" src="https://drive.google.com/file/d/0BwyjfRinveSZZDBqUVNnVF9yVlU/preview" width="100%" height="370px"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="Treasure" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h1 class="modal-title" id="myModalLabel">祕寶探境</h1>
+                    </div>
+                    <iframe id="Treasure_video" src="https://drive.google.com/file/d/0BwyjfRinveSZM3gtSUgzWHoxUGM/preview" width="100%" height="370px"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="thstory" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h1 class="modal-title" id="myModalLabel">鄉野密境-大坑餐飲故事館</h1>
+                    </div>
+                    <div id="carousel_thstory" class="carousel slide" data-ride="carousel_thstory">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel_thstory" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel_thstory" data-slide-to="1" class=""></li>
+                            <li data-target="#carousel_thstory" data-slide-to="2" class=""></li>
+                            <li data-target="#carousel_thstory" data-slide-to="3" class=""></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="images/FLASH2_1.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="images/FLASH2_2.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="images/FLASH2_3.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="images/FLASH2_4.jpg">
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a id="carousel_thstory_prev" class="left carousel-control">
+                            <span>←</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a id="carousel_thstory_next" class="right carousel-control">
+                            <span>→</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="DiskSchedule" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h1 class="modal-title" id="myModalLabel">數位學習系統-行程排程</h1>
+                    </div>
+                    <div id="carousel_DiskSchedule" class="carousel slide" data-ride="carousel_DiskSchedule">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel_DiskSchedule" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel_DiskSchedule" data-slide-to="1" class=""></li>
+                            <li data-target="#carousel_DiskSchedule" data-slide-to="2" class=""></li>
+                            <li data-target="#carousel_DiskSchedule" data-slide-to="3" class=""></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="images/FLASH1_1.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="images/FLASH1_2.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="images/FLASH1_3.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="images/FLASH1_4.jpg">
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a id="carousel_DiskSchedule_prev" class="left carousel-control">
+                            <span>←</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a id="carousel_DiskSchedule_next" class="right carousel-control">
+                            <span>→</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Javascript Files
+========================================================= -->
+        <!-- jQuery (necessary for plugins) -->
+        <script src="asset/jquery.min.js"></script>
+        <!-- /jquery -->
+        <!-- bootstrap -->
+        <script src="asset/bootstrap.min.js"></script>
+        <!-- /bootstrap -->
+        <!-- easing -->
+        <script src="asset/jquery.easing.min.js"></script>
+        <!-- /easing -->
+        <!-- jQuery Mousewheel -->
+        <script src="asset/jquery.mousewheel.min.js"></script>
+        <!-- /jQuery Mousewheel -->
+        <!-- jQuery Mousewheel Smoothscroll -->
+        <script src="asset/jquery.nicescroll.min.js"></script>
+        <script src="asset/jquery.nicescroll.plus.js"></script>
+        <!-- /jQuery Mousewheel Smoothscroll -->
+        <!-- Waypoints (for CSS3 animations) -->
+        <script src="asset/waypoints.min.js"></script>
+        <!-- /waypoints -->
+        <!-- Modal box-->
+        <script src="asset/nivo-lightbox.min.js"></script>
+        <!-- /Modal Box -->
+        <!-- Carousel-->
+        <script src="asset/jquery.bxslider.min.js"></script>
+        <!-- /Carousel -->
+        <!-- Front-end Validator (for forms) -->
+        <script src="asset/jquery.validate.min.js"></script>
+        <!-- /Front-end Validator -->
+        <!-- placeholder Support for IE -->
+        <script src="asset/placeholders.jquery.min.js"></script>
+        <!-- /placeholder support -->
+        <!-- Cross-browser -->
+        <script src="asset/cross-browser.js"></script>
+        <!-- /Cross-browser -->
+        <!-- <script src="asset/angular.min.js"></script>
+        <script src="asset/ui-bootstrap-tpls.js"></script> -->
+        <!-- Configurations -->
+        <script src="asset/main.js"></script>
+        <!-- /Configurations -->
+
+</body>
+
+</html>
