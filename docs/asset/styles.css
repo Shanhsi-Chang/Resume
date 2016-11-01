@@ -912,3 +912,12 @@ ol.carousel-indicators {
 div.item img {
     margin: 0 auto;
 }
+
+.skill-item {
+    height: 2em;
+    margin: 20px 0;
+    padding: 5px 20px;
+    background-color: #efefef;
+    border-radius: 5px;
+    box-shadow: 1px 0 0 1px rgba(0, 0, 0, 0.1);
+}
