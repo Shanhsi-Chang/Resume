@@ -803,7 +803,7 @@ textarea.form-control {
     font-size: 18px;
     position: fixed;
     top: 40%;
-    width: 900px;
+    width: 100%;
     z-index: 9999;
     padding: 10px 20px
 }
